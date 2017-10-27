@@ -10,6 +10,9 @@ from django.core.mail import send_mail
 def post_list(request):
 	return render(request, 'blog/post/list.html')
 
+def privacy(request):
+	return render(request, 'blog/post/PrivacyAct.html')
+
 
 
 def post_send(request):
