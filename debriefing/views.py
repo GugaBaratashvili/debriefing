@@ -11,7 +11,7 @@ def post_list(request):
 	return render(request, 'blog/post/list.html')
 
 def privacy(request):
-	return render(request, 'blog/post/PrivacyAct.html')
+	return render(request, 'blog/PrivacyAct.html')
 
 
 
