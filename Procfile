@@ -1,1 +1,1 @@
-web: gunicorn routes:app
+web: gunicorn debriefing.wsgi --log-file -
