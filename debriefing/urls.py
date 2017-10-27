@@ -24,5 +24,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', post_list, name='post_list'),
     url(r'^send/$', post_send, name='post_send'),
-    url(r'^static/privacy/PrivacyAct.html', static.privacy.PrivacyAct.html),
 ]
