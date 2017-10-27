@@ -19,6 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from debriefing.views import post_send, post_list, privacy
 from . import templates
+from . import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
