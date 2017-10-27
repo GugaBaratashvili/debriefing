@@ -1,0 +1,76 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<HTML>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+    <!--<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+    <style type="text/css">
+    	body {
+	font-family: 'Lobster', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	background-color: none; 
+	background-image: url( "{% static 'images/th.jpg' %}"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 250px;
+    padding-top: none;
+    padding: 15px;
+}
+p {padding:15px;}
+h1 {text-align: center;}
+a { color: #00FF00;  }
+a, button { transition: all 1.3s ease;}
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+.footerholder {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    background: none repeat scroll 0 0 blue;
+    height: 30px;
+    margin: auto;
+    width: 100%;
+}
+.btn {
+    background-color: white;
+    color: white;
+}
+    </style>
+
+</head>
+
+<body>
+	<h1>Welcome to Student Mandatory Debriefing Survey!</h1>
+	<p></p>
+	<h4>This quietionnaire was developed by Office of Defense Cooperation (ODC) in Tbilisi, Georgia. The purpose of this questionnaire is to obtain your comments and recommendations concerning the training you recently received in the U.S.</h4>
+	
+
+		{% block content %}
+		
+		{% endblock %}
+
+	
+		<h2></h2>
+		<a 
+    	class="btn btn-info" 
+    	href="{% url "post_send" %}">Click here to start survey.</a>
+	
+</body>
+<div class="footerholder">
+    <div class="footer">
+<footer><a href="{% static 'privacy/PrivacyAct.html'  %}">Privacy Act Statement</footer>
+	</div>
+</div>
+</HTML>

@@ -1,0 +1,12 @@
+body {
+	font-family: 'Lobster', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+}
+a { color: #81b4eb;  }
+a, button { transition: all 0.3s ease; }
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
