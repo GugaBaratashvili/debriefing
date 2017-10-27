@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', post_list, name='post_list'),
     url(r'^send/$', post_send, name='post_send'),
-    url(r'^privacy/$', privacy, name='privacy'),
+    url(r'^PrivacyAct/$', privacy, name='privacy'),
 ]
