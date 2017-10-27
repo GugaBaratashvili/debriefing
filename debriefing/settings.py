@@ -25,7 +25,7 @@ SECRET_KEY = 'na0pp5v*_h2pm-e!hc*8s4@$-u!##vhmrrrexbup@r3c$ag(zi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dry-depths-81478.herokuapp.com']
 
 
 # Application definition
