@@ -14,7 +14,7 @@ def privacy(request):
 	return render(request, 'blog/PrivacyAct.html')
 
 def bg(request):
-	return render(request, 'blog/th.jpg')
+	return render(request, 'th.jpg')
 
 
 
