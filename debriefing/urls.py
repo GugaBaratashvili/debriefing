@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from debriefing.views import post_send, post_list, privacy
+from debriefing.views import post_send, post_list, privacy, bg
 from . import templates
 from . import static
 
@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^$', post_list, name='post_list'),
     url(r'^send/$', post_send, name='post_send'),
     url(r'^privacy/$', privacy, name='privacy'),
+    url(r'^bg/$', bg, name='bg'),
 ]
