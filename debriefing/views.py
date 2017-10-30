@@ -13,6 +13,9 @@ def post_list(request):
 def privacy(request):
 	return render(request, 'blog/PrivacyAct.html')
 
+def bg(request):
+	return render(request, 'blog/th.jpg')
+
 
 
 def post_send(request):
