@@ -14,10 +14,8 @@
 	background-color: none; 
 	background-repeat: no-repeat;
     padding-top: none;
-    padding:15px;
-    
 }
-
+h4{padding:15px;}
 h1 {text-align: center;}
 a { color: #00FF00;  }
 a, button { transition: all 1.3s ease;}
@@ -26,29 +24,17 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
-}
-
-
-
-
-    </style>
+		}
+</style>
 
 </head>
-
 <body>
 	<h1>Welcome to Student Mandatory Debriefing Survey!</h1>
 	<p></p>
 	<h4>This quietionnaire was developed by Office of Defense Cooperation (ODC) in Tbilisi, Georgia. The purpose of this questionnaire is to obtain your comments and recommendations concerning the training you recently received in the U.S.</h4>
-	
-
-		{% block content %}
-		
+		{% block content %}	
 		{% endblock %}
-
-	
 		<h2></h2>
-	
-	
 	<div>
                 <img src= "http://upload.wikimedia.org/wikipedia/commons/8/84/EUCOM_Logo.jpg" style="display:block; margin:auto;">
         </div>
@@ -56,13 +42,7 @@ a:focus {
 </body>
 	<a href="">   </a>
 	<a href="{% url "post_send" %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" padding:"20px;">Click here to start survey.</a>
-
-<div style="background-color:blue; width:100%; padding:0px; bottom:0px; height:30px; position: absolute; text-align:center;">
-	
-	
+	<div style="background-color:blue; width:100%; padding:0px; bottom:0px; height:30px; position: absolute; text-align:center;">
 	<a href="{% url "privacy" %}" style="text-align:center;">Privacy Act Statement</a>
-	
-	
-</div>
-
+	</div>
 </HTML>
