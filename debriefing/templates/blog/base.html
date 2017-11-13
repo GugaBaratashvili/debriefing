@@ -4,6 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     	<link href="{% static 'css/blog.css' %}" rel="stylesheet">
     	<style type="text/css">
     	body {
@@ -11,10 +12,7 @@
 	font-size: 19px;
 	font-weight: 300;
 	background-color: none; 
-	background-image: url=("{% static 'th.jpg'  %}"); 
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center 250px;
     padding-top: none;
     padding:15px;
     
@@ -65,9 +63,12 @@ a:focus {
 
 	
 		<h2></h2>
+	<div>
 		<a 
-    	class="btn btn-info" 
+    	class="btn btn-primary" 
     	href="{% url "post_send" %}">Click here to start survey.</a>
+	
+	</div>
 	
 	<div>
                 <img src= "http://upload.wikimedia.org/wikipedia/commons/8/84/EUCOM_Logo.jpg" style="display:block; margin:auto;">
