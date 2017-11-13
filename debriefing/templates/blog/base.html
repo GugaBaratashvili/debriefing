@@ -22,8 +22,9 @@ h4 {padding:15px;}
 p {padding:15px;}
 h1 {text-align: center;}
 a { color: #00FF00;  }
-a, button { transition: all 1.3s ease; padding:15px;}
+a, button { transition: all 1.3s ease;}
 a:hover,
+
 a:focus {
 	text-decoration: none;
 	outline: none;
@@ -64,7 +65,7 @@ a:focus {
 		<h2></h2>
 		<a 
     	class="btn btn-info" 
-    	href="{% url "post_send" %}">Click here to start survey.</a>
+    	href="{% url "post_send" %}" style="padding:0px;">Click here to start survey.</a>
 	
 	<div>
                 <img src= "http://upload.wikimedia.org/wikipedia/commons/8/84/EUCOM_Logo.jpg" style="display:block; margin:auto;">
@@ -73,7 +74,7 @@ a:focus {
 </body>
 <div class="footerholder">
     <div class="footer">
-<footer style="margin:0px; width=100%; padding=0px;"><a href="{% url "privacy" %}">Privacy Act Statement</footer>
+<footer style="margin:0px;"><a href="{% url "privacy" %}">Privacy Act Statement</footer>
 	</div>
 </div>
 </HTML>
