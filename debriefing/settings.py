@@ -61,7 +61,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'debriefing.urls'
+ROOT_URLCONF = [
+    'debriefing.urls'
+    'herokuappurl'
+]
 
 TEMPLATES = [
     {
